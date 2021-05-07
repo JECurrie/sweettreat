@@ -16,14 +16,11 @@ const About = ({
       <main className="page">
         <section className="about-page">
           <article>
-            <h2>I'm baby coloring book poke taxidermy</h2>
+            <h2>Cookie Recipes</h2>
             <p>
-              Taxidermy forage glossier letterpress heirloom before they sold
-              out you probably haven't heard of them banh mi biodiesel chia.
-            </p>
-            <p>
-              Taiyaki tumblr flexitarian jean shorts brunch, aesthetic salvia
-              retro.
+              From easy to decadent to downright delicious, these cookie recipes
+              are sure to satisfy your sweet tooth. Find all of your favorites,
+              including chocolate chip, peanut butter, snickerdoodles and more.
             </p>
             <Link to="/contact" className="btn">
               contact
@@ -31,13 +28,13 @@ const About = ({
           </article>
           <StaticImage
             src="../assets/images/about.jpeg"
-            alt="Person Pouring Salt in Bowl"
+            alt="Cookies"
             className="about-img"
             placeholder="blurred"
           />
         </section>
         <section className="featured-recipes">
-          <h5>Look at this Awesomesouce!</h5>
+          <h5>So much to choose from!!</h5>
           <RecipesList recipes={recipes} />
         </section>
       </main>

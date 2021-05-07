@@ -10,14 +10,14 @@ require("dotenv").config({
 module.exports = {
   /* Your site config here */
   siteMetadata: {
-    title: "Simply Recipes",
+    title: "Sweet Treats",
     description: "Nice and clean recipes site",
-    author: "@johnsmilga",
-    person: { name: "john", age: 32 },
+    author: "@joancurrie",
+    person: { name: "joan", age: 57 },
     simpleData: ["item 1", "item 2"],
     complexData: [
-      { name: "john", age: 32 },
-      { name: "susan", age: 21 },
+      { name: "joan", age: 57 },
+      { name: "charles", age: 60 },
     ],
   },
   plugins: [
@@ -35,9 +35,9 @@ module.exports = {
     {
       resolve: `gatsby-source-contentful`,
       options: {
-        spaceId: `1sfeg2xcbtuz`,
+        spaceId: `ulcop0ky60nk`, //1sfeg2xcbtuz`,
         // Learn about environment variables: https://gatsby.dev/env-vars
-        accessToken: `1nbHjd66EXSx6nNgEdRPZzTYUbDlk_oQl9OsjlkeiWA`,
+        accessToken: process.env.CONTENTFUL_API_KEY, //`1nbHjd66EXSx6nNgEdRPZzTYUbDlk_oQl9OsjlkeiWA`,
       },
     },
     {

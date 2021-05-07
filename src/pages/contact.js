@@ -14,17 +14,17 @@ const Contact = ({ data }) => {
           <article className="contact-info">
             <h3>Want To Get In Touch?</h3>
             <p>
-              Four dollar toast biodiesel plaid salvia actually pickled banjo
-              bespoke mlkshk intelligentsia edison bulb synth.
+              While we're good with smoke signals, there are simpler ways for us
+              to get in touch and answer your questions.
             </p>
-            <p>Cardigan prism bicycle rights put a bird on it deep v.</p>
-            <p>
-              Hashtag swag health goth air plant, raclette listicle fingerstache
-              cold-pressed fanny pack bicycle rights cardigan poke.
-            </p>
+            <p>Any questions? Drop us a line.</p>
           </article>
           <article>
-            <form className="form contact-form">
+            <form
+              className="form contact-form"
+              action="https://formspree.io/f/xyylkvnp"
+              method="POST"
+            >
               <div className="form-row">
                 <label htmlFor="name">your name</label>
                 <input type="text" name="name" id="name" />
@@ -44,7 +44,7 @@ const Contact = ({ data }) => {
           </article>
         </section>
         <section className="featured-recipes">
-          <h5>Look at this Awesomesouce!</h5>
+          <h5>Bake!!</h5>
           <RecipesList recipes={recipes} />
         </section>
       </main>

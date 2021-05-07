@@ -6,7 +6,7 @@ import SEO from "../components/SEO"
 export default function Home() {
   return (
     <Layout>
-      <SEO title="Home " />
+      <SEO title="Home" description="this is home page" />
       <main className="page">
         <header className="hero">
           <StaticImage
@@ -18,8 +18,8 @@ export default function Home() {
           ></StaticImage>
           <div className="hero-container">
             <div className="hero-text">
-              <h1>simply recipes</h1>
-              <h4>no fluff, just recipes</h4>
+              <h1>sweet treat</h1>
+              <h4>heavenly delights, just recipes</h4>
             </div>
           </div>
         </header>
